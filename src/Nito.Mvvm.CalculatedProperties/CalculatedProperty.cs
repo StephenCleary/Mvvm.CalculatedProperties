@@ -95,11 +95,6 @@ namespace Nito.Mvvm.CalculatedProperties
             _sourceProperty.RemoveTarget(targetProperty);
         }
 
-        void IProperty.InvokeOnPropertyChanged()
-        {
-            _sourceProperty.InvokeOnPropertyChanged();
-        }
-
         void IProperty.InvalidateTargets()
         {
             _sourceProperty.InvalidateTargets();

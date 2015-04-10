@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Nito.Mvvm;
 using Nito.Mvvm.CalculatedProperties;
 using Xunit;
 using System.Linq;

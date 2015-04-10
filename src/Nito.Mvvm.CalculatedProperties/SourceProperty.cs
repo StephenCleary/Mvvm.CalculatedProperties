@@ -8,12 +8,11 @@ namespace Nito.Mvvm.CalculatedProperties
     /// <summary>
     /// A base type for source properties.
     /// </summary>
-    internal sealed class SourceProperty : ISourceProperty
+    internal sealed class SourceProperty : ISourceProperty, IRaisePropertyChanged
     {
         private readonly int _threadId;
         private readonly Action<PropertyChangedEventArgs> _onPropertyChanged;
         private readonly HashSet<ITargetProperty> _targets;
-        private PropertyChangedEventArgs _args;
         private string _propertyName;
 
         /// <summary>
@@ -50,15 +49,6 @@ namespace Nito.Mvvm.CalculatedProperties
             }
 
             _propertyName = propertyName;
-            _args = new PropertyChangedEventArgs(_propertyName);
-        }
-
-        public void InvokeOnPropertyChanged()
-        {
-            if (_args == null)
-                Debug.WriteLine("CalculatedProperties: Cannot invoke OnPropertyChanged for an unnamed property.");
-            else
-                _onPropertyChanged(_args);
         }
 
         /// <summary>
@@ -70,7 +60,10 @@ namespace Nito.Mvvm.CalculatedProperties
             using (PropertyChangedNotificationManager.Instance.DeferNotifications())
             {
                 // Queue OnNotifyPropertyChanged.
-                (PropertyChangedNotificationManager.Instance as IPropertyChangedNotificationManager).Register(this);
+                if (_propertyName == null)
+                    Debug.WriteLine("CalculatedProperties: Cannot invoke OnPropertyChanged for an unnamed property.");
+                else
+                    PropertyChangedNotificationManager.Instance.Register(this, _propertyName);
 
                 // Invalidate all targets.
                 foreach (var target in _targets)
@@ -100,6 +93,11 @@ namespace Nito.Mvvm.CalculatedProperties
         public void RemoveTarget(ITargetProperty targetProperty)
         {
             _targets.Remove(targetProperty);
+        }
+
+        void IRaisePropertyChanged.RaisePropertyChanged(PropertyChangedEventArgs e)
+        {
+            _onPropertyChanged(e);
         }
 
         [DebuggerNonUserCode]
