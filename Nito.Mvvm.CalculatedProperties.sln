@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22609.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A6B3826F-98B6-4546-8C4C-D7BE5EF363F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B4FAFF26-81BE-427D-B355-18CDBF98F701}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnitTests", "test\UnitTests\UnitTests.kproj", "{BD515F31-D26E-4E97-B643-A9D4E6A0B2EE}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnitTests", "test\UnitTests\UnitTests.xproj", "{BD515F31-D26E-4E97-B643-A9D4E6A0B2EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E62A0A7C-8775-4550-9B39-80CC50F80414}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nito.Mvvm.CalculatedProperties", "src\Nito.Mvvm.CalculatedProperties\Nito.Mvvm.CalculatedProperties.kproj", "{3250C6F0-13A4-4552-8DA2-9D05359AC2C7}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nito.Mvvm.CalculatedProperties", "src\Nito.Mvvm.CalculatedProperties\Nito.Mvvm.CalculatedProperties.xproj", "{3250C6F0-13A4-4552-8DA2-9D05359AC2C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
