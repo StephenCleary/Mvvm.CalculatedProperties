@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-delta-1",
+  "version": "1.0.0-delta-2",
   "authors": [ "Stephen Cleary" ],
   "description": "Automatic implementation of change detection for MVVM properties.",
   "buildOptions": {
@@ -17,10 +17,22 @@
         "System.Runtime": "4.1.0",
         "System.Runtime.Extensions": "4.1.0"
       }
+    },
+    ".NETPortable,Version=v4.5,Profile=Profile259": {
+      "frameworkAssemblies": {
+        "System.Collections": "",
+        "System.Diagnostics.Debug": "",
+        "System.Linq": "",
+        "System.Linq.Expressions": "",
+        "System.ObjectModel": "",
+        "System.Reflection": "",
+        "System.Runtime": "",
+        "System.Runtime.Extensions": ""
+      }
     }
   },
 
   "dependencies": {
-    "Nito.Mvvm.Core": "1.0.0-delta-1"
+    "Nito.Mvvm.Core": "1.0.0-delta-2"
   }
 }

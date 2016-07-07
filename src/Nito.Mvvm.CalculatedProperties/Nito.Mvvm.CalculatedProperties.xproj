@@ -9,7 +9,7 @@
     <ProjectGuid>3250c6f0-13a4-4552-8da2-9d05359ac2c7</ProjectGuid>
     <RootNamespace>Nito.Mvvm.CalculatedProperties</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AssemblyName>Nito.Mvvm.CalculatedProperties</AssemblyName>
