@@ -1,4 +1,6 @@
-﻿namespace Nito.Mvvm.CalculatedProperties
+﻿using System.ComponentModel;
+
+namespace Nito.Mvvm.CalculatedProperties
 {
     /// <summary>
     /// A property instance.
