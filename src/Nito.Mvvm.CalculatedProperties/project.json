@@ -1,10 +1,19 @@
 {
-  "version": "1.0.0-delta-3",
+  "version": "1.0.0-eta-01",
   "authors": [ "Stephen Cleary" ],
   "description": "Automatic implementation of change detection for MVVM properties.",
   "buildOptions": {
     "warningsAsErrors": true,
     "xmlDoc": true
+  },
+  "packOptions": {
+    "tags": [ "mvvm", "inotifypropertychanged", "calculated", "properties" ],
+    "projectUrl": "https://github.com/StephenCleary/Mvvm.CalculatedProperties",
+    "licenseUrl": "https://raw.githubusercontent.com/StephenCleary/Mvvm.CalculatedProperties/master/LICENSE",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/StephenCleary/Mvvm.CalculatedProperties.git"
+    }
   },
   "frameworks": {
     "netstandard1.0": {
@@ -21,19 +30,19 @@
     },
     ".NETPortable,Version=v4.5,Profile=Profile259": {
       "frameworkAssemblies": {
-        "System.Collections": "",
-        "System.Diagnostics.Debug": "",
-        "System.Linq": "",
-        "System.Linq.Expressions": "",
-        "System.ObjectModel": "",
-        "System.Reflection": "",
-        "System.Runtime": "",
-        "System.Runtime.Extensions": ""
+        "System.Collections": { "type": "build" },
+        "System.Diagnostics.Debug": { "type": "build" },
+        "System.Linq": { "type": "build" },
+        "System.Linq.Expressions": { "type": "build" },
+        "System.ObjectModel": { "type": "build" },
+        "System.Reflection": { "type": "build" },
+        "System.Runtime": { "type": "build" },
+        "System.Runtime.Extensions": { "type": "build" }
       }
     }
   },
 
   "dependencies": {
-    "Nito.Mvvm.Core": "1.0.0-delta-4"
+    "Nito.Mvvm.Core": "1.0.0-eta-01"
   }
 }
