@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Automatic implementation of change detection for MVVM properties.</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>eta-01</VersionSuffix>
+    <VersionSuffix></VersionSuffix>
     <Authors>Stephen Cleary</Authors>
     <TargetFrameworks>netstandard1.0</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
