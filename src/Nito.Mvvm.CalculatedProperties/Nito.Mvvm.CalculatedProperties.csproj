@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nito.Mvvm.Core" Version="1.0.0-eta-01" />
+    <PackageReference Include="Nito.Mvvm.Core" Version="1.2.0" />
   </ItemGroup>
 
 </Project>
