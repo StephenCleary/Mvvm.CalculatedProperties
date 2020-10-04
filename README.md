@@ -1,4 +1,1 @@
-# Mvvm.CalculatedProperties
-Automatically raise PropertyChanged in MVVM applications.
-
-[API Docs](http://dotnetapis.com/pkg/Nito.Mvvm.CalculatedProperties)
+This project has moved [to Nito.Mvvm](https://github.com/StephenCleary/Mvvm).
